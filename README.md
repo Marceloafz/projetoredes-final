@@ -33,21 +33,21 @@ Criar um ambiente de rede virtualizada com **8 máquinas virtuais** rodando **Ub
 O ambiente segue a topologia estrela definida no projeto:
 
 - **4 PCs físicos** (PC1, PC2, PC3, PC4) conectados a um switch de 8 portas via cabo Ethernet
-- Cada PC hospeda **2 VMs** no VirtualBox com adaptador de rede em modo **Bridge**
+- Cada PC hospeda **2 VMs** no VirtualBox com adaptador de rede interna
 - As VMs se comunicam como máquinas físicas na mesma rede local
 
-```
-         [VM Lab01@PC3]  [VM Lab02@PC3]
-                  \         /
-                   \       /
-        [PC1] ---- [SWITCH 8P] ---- [PC2]
-                   /       \
-                  /         \
-         [VM Lab01@PC4]  [VM Lab02@PC4]
-```
+[ SWITCH 8P ]
+   ├── servidor   │   └── 192.168.26.33   │   └── servidor.grupo3.bsi-26-1.maceio.lab
+   ├── cliente1   │   └── 192.168.26.34   │   └── cliente1.grupo3.bsi-26-1.maceio.lab
+   ├── cliente2   │   └── 192.168.26.35   │   └── cliente2.grupo3.bsi-26-1.maceio.lab
+   ├── cliente3   │   └── 192.168.26.36   │   └── cliente3.grupo3.bsi-26-1.maceio.lab
+   ├── cliente4   │   └── 192.168.26.37   │   └── cliente4.grupo3.bsi-26-1.maceio.lab
+   ├── cliente5   │   └── 192.168.26.38   │   └── cliente5.grupo3.bsi-26-1.maceio.lab
+   ├── cliente6   │   └── 192.168.26.39   │   └── cliente6.grupo3.bsi-26-1.maceio.lab
+   └── cliente7       └── 192.168.26.40       └── cliente7.grupo3.bsi-26-1.maceio.lab
 
 > **Adaptadores configurados em cada VM:**
-> - `enp0s3` → modo **Bridge** (rede do projeto — sub-rede `/28`)
+> - `enp0s3` → rede interna (rede do projeto — sub-rede `/28`)
 > - `enp0s8` → **NAT/DHCP interno** (acesso à internet — rede `10.0.3.x`)
 
 ---
@@ -60,7 +60,7 @@ Configuração utilizada em cada uma das 8 máquinas virtuais:
 |---|---|
 | Sistema Operacional | Ubuntu Server 22.04 LTS |
 | Memória RAM | 1024 MB (1 GB) |
-| Processadores | 1 vCPU |
+| Processadores | 3 vCPU |
 | Espaço em Disco | 10 GB (VDI, alocação dinâmica) |
 | Adaptador 1 (`enp0s3`) | Placa em modo Bridge |
 | Adaptador 2 (`enp0s8`) | NAT (DHCP automático) |
@@ -76,7 +76,7 @@ A turma bsi-26-1 usa a rede `192.168.26.0/24`. O **Grupo 3** recebeu a sub-rede:
 | Sub-rede | `192.168.26.32/28` |
 | Endereço de rede | `192.168.26.32` |
 | Primeiro host | `192.168.26.33` |
-| Último host | `192.168.26.46` |
+| Último host | `192.168.26.40` |
 | Broadcast | `192.168.26.47` |
 | Máscara | `255.255.255.240` |
 
