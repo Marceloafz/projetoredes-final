@@ -35,7 +35,9 @@ O ambiente segue a topologia estrela definida no projeto:
 - **4 PCs físicos** (PC1, PC2, PC3, PC4) conectados a um switch de 8 portas via cabo Ethernet
 - Cada PC hospeda **2 VMs** no VirtualBox com adaptador de rede interna
 - As VMs se comunicam como máquinas físicas na mesma rede local
-                           TOPOLOGIA DA REDE
+
+
+                          TOPOLOGIA DA REDE
 
 
 
