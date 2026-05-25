@@ -7,7 +7,7 @@
 
 ---
 
-## 📋 Sumário
+##  Sumário
 
 1. [Objetivo](#objetivo)
 2. [Topologia](#topologia)
