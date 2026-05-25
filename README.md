@@ -89,7 +89,7 @@ Configuração utilizada em cada uma das 8 máquinas virtuais:
 | Memória RAM | 1024 MB (1 GB) |
 | Processadores | 3 vCPU |
 | Espaço em Disco | 10 GB (VDI, alocação dinâmica) |
-| Adaptador 1 (`enp0s3`) | Placa em modo Bridge |
+| Adaptador 1 (`enp0s3`) | Placa em modo Rede Interna |
 | Adaptador 2 (`enp0s8`) | NAT (DHCP automático) |
 
 ---
