@@ -330,16 +330,7 @@ As 8 máquinas foram cadastradas como hosts no Termius:
 
 Todos os hosts foram configurados com o grupo de credenciais compartilhadas (`ssh, servidor`), permitindo acesso rápido a qualquer VM sem reconfiguração.
 
----
 
-## 📁 Estrutura do Repositório
-
-```
-.
-├── README.md          # Este arquivo
-└── configs/
-    └── 50-cloud-init.yaml   # Exemplo de configuração Netplan
-```
 
 ---
 
