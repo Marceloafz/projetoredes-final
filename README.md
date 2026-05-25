@@ -1,4 +1,4 @@
-# 🌐 Projeto Final — Fundamentos de Redes de Computadores
+# Projeto Final — Fundamentos de Redes de Computadores
 
 **Turma:** bsi-26-1 (2026.1)  
 **Grupo:** 3  
@@ -120,7 +120,7 @@ O IP estático foi configurado editando o arquivo Netplan em cada VM:
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-**Conteúdo do arquivo** (o IP em `addresses` muda de acordo com cada VM):
+**Conteúdo do arquivo**
 
 ```yaml
 network:
@@ -129,7 +129,7 @@ network:
     enp0s3:
       dhcp4: no
       addresses:
-        - 192.168.26.33/28   # alterar para o IP da VM correspondente (.33 a .40)
+        - 192.168.26.33/28
     enp0s8:
       dhcp4: yes
 ```
