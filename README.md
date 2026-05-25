@@ -336,7 +336,7 @@ O acesso SSH entre as VMs foi realizado utilizando o aplicativo **[Termius](http
 | Campo | Valor |
 |---|---|
 | Address | IP da VM destino (ex: `127.0.0.1`) |
-| Porta SSH | `2222-2230` |
+| Porta SSH | `2222-2229` |
 | Usuário | `servidor` |
 | Autenticação | Senha |
 
