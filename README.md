@@ -36,15 +36,22 @@ O ambiente segue a topologia estrela definida no projeto:
 - Cada PC hospeda **2 VMs** no VirtualBox com adaptador de rede interna
 - As VMs se comunicam como máquinas físicas na mesma rede local
 
-[ SWITCH 8P ]
-   ├── servidor   │   └── 192.168.26.33   │   └── servidor.grupo3.bsi-26-1.maceio.lab
-   ├── cliente1   │   └── 192.168.26.34   │   └── cliente1.grupo3.bsi-26-1.maceio.lab
-   ├── cliente2   │   └── 192.168.26.35   │   └── cliente2.grupo3.bsi-26-1.maceio.lab
-   ├── cliente3   │   └── 192.168.26.36   │   └── cliente3.grupo3.bsi-26-1.maceio.lab
-   ├── cliente4   │   └── 192.168.26.37   │   └── cliente4.grupo3.bsi-26-1.maceio.lab
-   ├── cliente5   │   └── 192.168.26.38   │   └── cliente5.grupo3.bsi-26-1.maceio.lab
-   ├── cliente6   │   └── 192.168.26.39   │   └── cliente6.grupo3.bsi-26-1.maceio.lab
-   └── cliente7       └── 192.168.26.40       └── cliente7.grupo3.bsi-26-1.maceio.lab
+                           ┌─────────────┐
+                           │  SWITCH 8P  │
+                           └──────┬──────┘
+        ┌──────────┬──────────┬──────────┬──────────┐
+        │          │          │          │          │
+
+ ┌────────────┐ ┌────────────┐ ┌────────────┐ ┌────────────┐
+ │  servidor  │ │  cliente1  │ │  cliente2  │ │  cliente3  │
+ └────────────┘ └────────────┘ └────────────┘ └────────────┘
+ 192.168.26.33  192.168.26.34  192.168.26.35  192.168.26.36
+
+
+ ┌────────────┐ ┌────────────┐ ┌────────────┐ ┌────────────┐
+ │  cliente4  │ │  cliente5  │ │  cliente6  │ │  cliente7  │
+ └────────────┘ └────────────┘ └────────────┘ └────────────┘
+ 192.168.26.37  192.168.26.38  192.168.26.39  192.168.26.40
 
 > **Adaptadores configurados em cada VM:**
 > - `enp0s3` → rede interna (rede do projeto — sub-rede `/28`)
