@@ -6,10 +6,10 @@
 
 | Integrante | Usuário no sistema |
 |:---|:---|
-| Pedro Henrique | `pedro.henrique` |
-| Wallex Kauã | `wallex.kaua` |
-| Marcelo Alves | `marcelo.alves` |
-| Werython Rocha | `werython.rocha` |
+| Pedro Henrique | `pedro-henrique` |
+| Wallex Kauã | `wallex-kaua` |
+| Marcelo Alves | `marcelo-alves` |
+| Werython Rocha | `werython-rocha` |
 
 </div>
 
