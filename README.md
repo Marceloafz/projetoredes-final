@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌐 Projeto Final — Fundamentos de Redes de Computadores
+# Projeto Final — Fundamentos de Redes de Computadores
 
 **Turma:** bsi-26-1 (2026.1) &nbsp;·&nbsp; **Grupo:** 3 &nbsp;·&nbsp; **Domínio:** `grupo3.bsi-26-1.maceio.lab`
 
@@ -331,10 +331,8 @@ A imagem abaixo ilustra os parâmetros de conexão SSH configurados no Termius p
 Para acessar qualquer VM diretamente pelo terminal:
 
 ```bash
-# Sintaxe geral
 ssh servidor@<ip-da-vm> -p 2222
 
-# Exemplos
 ssh servidor@192.168.26.34 -p 2222   # acessa cliente1
 ssh servidor@192.168.26.37 -p 2222   # acessa cliente4
 ```
@@ -348,8 +346,8 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
 Para verificar a identidade da máquina após o login:
 
 ```bash
-hostname   # exibe o hostname da VM acessada
-whoami     # exibe o usuário da sessão ativa
+hostname   
+whoami     
 ```
 
 ---
