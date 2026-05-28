@@ -333,8 +333,8 @@ Para acessar qualquer VM diretamente pelo terminal:
 ```bash
 ssh servidor@<ip-da-vm> -p 2222
 
-ssh servidor@192.168.26.34 -p 2222   # acessa cliente1
-ssh servidor@192.168.26.37 -p 2222   # acessa cliente4
+ssh servidor@192.168.26.34 -p 2222   
+ssh servidor@192.168.26.37 -p 2222   
 ```
 
 Na primeira conexão, confirmar a chave do host quando solicitado:
