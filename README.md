@@ -4,7 +4,7 @@
 
 **Instituto Federal de Alagoas — IFAL**
 **Curso de Bacharelado em Sistemas de Informacao — bsi-26-1 (2026.1)**
-**Disciplina:** Fundamentos de Redes de Computadores &nbsp;·&nbsp; **Professor:** [Nome do Professor]
+**Disciplina:** Fundamentos de Redes de Computadores &nbsp;·&nbsp; **Professor:** [Alaelson Jatobá]
 
 </div>
 
@@ -17,7 +17,7 @@
 | Instituicao | Instituto Federal de Alagoas — IFAL |
 | Disciplina | Fundamentos de Redes de Computadores |
 | Turma | bsi-26-1 (2026.1) |
-| Professor | [Nome do Professor] |
+| Professor | [Alaelson Jatobá] |
 | Numero do Grupo | Grupo 3 |
 | Dominio do Grupo | `grupo3.bsi-26-1.maceio.lab` |
 | Repositorio GitHub | https://github.com/Marceloafz/projetoredes-final |
